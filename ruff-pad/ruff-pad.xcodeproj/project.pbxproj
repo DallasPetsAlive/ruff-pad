@@ -13,6 +13,7 @@
 		F72EA1F31A5B73650091B3CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72EA1F21A5B73650091B3CF /* Images.xcassets */; };
 		F72EA1F61A5B73650091B3CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72EA1F41A5B73650091B3CF /* LaunchScreen.xib */; };
 		F72EA2021A5B73650091B3CF /* ruff_padTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EA2011A5B73650091B3CF /* ruff_padTests.swift */; };
+		F78E86881A5B7EB3008AA901 /* _settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F78E86871A5B7EB3008AA901 /* _settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F72EA1FB1A5B73650091B3CF /* ruff-padTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ruff-padTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72EA2001A5B73650091B3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72EA2011A5B73650091B3CF /* ruff_padTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruff_padTests.swift; sourceTree = "<group>"; };
+		F78E86871A5B7EB3008AA901 /* _settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = _settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		F72EA1E91A5B73650091B3CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F78E86871A5B7EB3008AA901 /* _settings.png */,
 				F72EA1EA1A5B73650091B3CF /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78E86881A5B7EB3008AA901 /* _settings.png in Resources */,
 				F72EA1F11A5B73650091B3CF /* Main.storyboard in Resources */,
 				F72EA1F61A5B73650091B3CF /* LaunchScreen.xib in Resources */,
 				F72EA1F31A5B73650091B3CF /* Images.xcassets in Resources */,
@@ -407,6 +411,7 @@
 				F72EA2071A5B73650091B3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F72EA2081A5B73650091B3CF /* Build configuration list for PBXNativeTarget "ruff-padTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				F72EA20A1A5B73650091B3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
