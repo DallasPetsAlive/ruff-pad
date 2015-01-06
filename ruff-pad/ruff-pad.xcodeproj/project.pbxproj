@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F72EA1EC1A5B73650091B3CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EA1EB1A5B73650091B3CF /* AppDelegate.swift */; };
+		F72EA1EE1A5B73650091B3CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EA1ED1A5B73650091B3CF /* ViewController.swift */; };
+		F72EA1F11A5B73650091B3CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72EA1EF1A5B73650091B3CF /* Main.storyboard */; };
+		F72EA1F31A5B73650091B3CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72EA1F21A5B73650091B3CF /* Images.xcassets */; };
+		F72EA1F61A5B73650091B3CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72EA1F41A5B73650091B3CF /* LaunchScreen.xib */; };
+		F72EA2021A5B73650091B3CF /* ruff_padTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72EA2011A5B73650091B3CF /* ruff_padTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F72EA1FC1A5B73650091B3CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F72EA1DE1A5B73650091B3CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72EA1E51A5B73650091B3CF;
+			remoteInfo = "ruff-pad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F72EA1E61A5B73650091B3CF /* ruff-pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ruff-pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72EA1EA1A5B73650091B3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72EA1EB1A5B73650091B3CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F72EA1ED1A5B73650091B3CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F72EA1F01A5B73650091B3CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F72EA1F21A5B73650091B3CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F72EA1F51A5B73650091B3CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F72EA1FB1A5B73650091B3CF /* ruff-padTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ruff-padTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72EA2001A5B73650091B3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72EA2011A5B73650091B3CF /* ruff_padTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ruff_padTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F72EA1E31A5B73650091B3CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72EA1F81A5B73650091B3CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F72EA1DD1A5B73650091B3CF = {
+			isa = PBXGroup;
+			children = (
+				F72EA1E81A5B73650091B3CF /* ruff-pad */,
+				F72EA1FE1A5B73650091B3CF /* ruff-padTests */,
+				F72EA1E71A5B73650091B3CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F72EA1E71A5B73650091B3CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F72EA1E61A5B73650091B3CF /* ruff-pad.app */,
+				F72EA1FB1A5B73650091B3CF /* ruff-padTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F72EA1E81A5B73650091B3CF /* ruff-pad */ = {
+			isa = PBXGroup;
+			children = (
+				F72EA1EB1A5B73650091B3CF /* AppDelegate.swift */,
+				F72EA1ED1A5B73650091B3CF /* ViewController.swift */,
+				F72EA1EF1A5B73650091B3CF /* Main.storyboard */,
+				F72EA1F21A5B73650091B3CF /* Images.xcassets */,
+				F72EA1F41A5B73650091B3CF /* LaunchScreen.xib */,
+				F72EA1E91A5B73650091B3CF /* Supporting Files */,
+			);
+			path = "ruff-pad";
+			sourceTree = "<group>";
+		};
+		F72EA1E91A5B73650091B3CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F72EA1EA1A5B73650091B3CF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F72EA1FE1A5B73650091B3CF /* ruff-padTests */ = {
+			isa = PBXGroup;
+			children = (
+				F72EA2011A5B73650091B3CF /* ruff_padTests.swift */,
+				F72EA1FF1A5B73650091B3CF /* Supporting Files */,
+			);
+			path = "ruff-padTests";
+			sourceTree = "<group>";
+		};
+		F72EA1FF1A5B73650091B3CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F72EA2001A5B73650091B3CF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F72EA1E51A5B73650091B3CF /* ruff-pad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72EA2051A5B73650091B3CF /* Build configuration list for PBXNativeTarget "ruff-pad" */;
+			buildPhases = (
+				F72EA1E21A5B73650091B3CF /* Sources */,
+				F72EA1E31A5B73650091B3CF /* Frameworks */,
+				F72EA1E41A5B73650091B3CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ruff-pad";
+			productName = "ruff-pad";
+			productReference = F72EA1E61A5B73650091B3CF /* ruff-pad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F72EA1FA1A5B73650091B3CF /* ruff-padTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72EA2081A5B73650091B3CF /* Build configuration list for PBXNativeTarget "ruff-padTests" */;
+			buildPhases = (
+				F72EA1F71A5B73650091B3CF /* Sources */,
+				F72EA1F81A5B73650091B3CF /* Frameworks */,
+				F72EA1F91A5B73650091B3CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72EA1FD1A5B73650091B3CF /* PBXTargetDependency */,
+			);
+			name = "ruff-padTests";
+			productName = "ruff-padTests";
+			productReference = F72EA1FB1A5B73650091B3CF /* ruff-padTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F72EA1DE1A5B73650091B3CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = dpa;
+				TargetAttributes = {
+					F72EA1E51A5B73650091B3CF = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F72EA1FA1A5B73650091B3CF = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F72EA1E51A5B73650091B3CF;
+					};
+				};
+			};
+			buildConfigurationList = F72EA1E11A5B73650091B3CF /* Build configuration list for PBXProject "ruff-pad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F72EA1DD1A5B73650091B3CF;
+			productRefGroup = F72EA1E71A5B73650091B3CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F72EA1E51A5B73650091B3CF /* ruff-pad */,
+				F72EA1FA1A5B73650091B3CF /* ruff-padTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F72EA1E41A5B73650091B3CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72EA1F11A5B73650091B3CF /* Main.storyboard in Resources */,
+				F72EA1F61A5B73650091B3CF /* LaunchScreen.xib in Resources */,
+				F72EA1F31A5B73650091B3CF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72EA1F91A5B73650091B3CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F72EA1E21A5B73650091B3CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72EA1EE1A5B73650091B3CF /* ViewController.swift in Sources */,
+				F72EA1EC1A5B73650091B3CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72EA1F71A5B73650091B3CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72EA2021A5B73650091B3CF /* ruff_padTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F72EA1FD1A5B73650091B3CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F72EA1E51A5B73650091B3CF /* ruff-pad */;
+			targetProxy = F72EA1FC1A5B73650091B3CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F72EA1EF1A5B73650091B3CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F72EA1F01A5B73650091B3CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F72EA1F41A5B73650091B3CF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F72EA1F51A5B73650091B3CF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F72EA2031A5B73650091B3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F72EA2041A5B73650091B3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F72EA2061A5B73650091B3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ruff-pad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F72EA2071A5B73650091B3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ruff-pad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F72EA2091A5B73650091B3CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ruff-padTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ruff-pad.app/ruff-pad";
+			};
+			name = Debug;
+		};
+		F72EA20A1A5B73650091B3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ruff-padTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ruff-pad.app/ruff-pad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F72EA1E11A5B73650091B3CF /* Build configuration list for PBXProject "ruff-pad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72EA2031A5B73650091B3CF /* Debug */,
+				F72EA2041A5B73650091B3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F72EA2051A5B73650091B3CF /* Build configuration list for PBXNativeTarget "ruff-pad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72EA2061A5B73650091B3CF /* Debug */,
+				F72EA2071A5B73650091B3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F72EA2081A5B73650091B3CF /* Build configuration list for PBXNativeTarget "ruff-padTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72EA2091A5B73650091B3CF /* Debug */,
+				F72EA20A1A5B73650091B3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F72EA1DE1A5B73650091B3CF /* Project object */;
+}
