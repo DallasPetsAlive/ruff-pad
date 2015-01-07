@@ -2,7 +2,7 @@
 //  ruff_padTests.swift
 //  ruff-padTests
 //
-//  Created by Lennox on 1/5/15.
+//  Created by Kirska on 1/5/15.
 //  Copyright (c) 2015 dpa. All rights reserved.
 //
 
