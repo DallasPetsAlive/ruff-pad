@@ -2,7 +2,7 @@
 //  SyncData.swift
 //  ruff-pad
 //
-//  Created by Lennox on 1/6/15.
+//  Created by Kirska on 1/6/15.
 //  Copyright (c) 2015 dpa. All rights reserved.
 //
 
@@ -36,21 +36,8 @@ func sendRGRequest() {
             "}" +
         "}"
     
-    post(jsonRequestString, "https://api.rescuegroups.org/http/json")
+    var json : NSObject = post(jsonRequestString, "https://api.rescuegroups.org/http/json")
     
-    /*request.HTTPBody = jsonRequestString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: true)
-    request.HTTPMethod = "POST"
-    request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
-    
-    // send the request
-    NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &error)
-    
-    // look at the response
-    if let httpResponse = response as? NSHTTPURLResponse {
-        println("HTTP response: \(httpResponse.statusCode)")
-    } else {
-        println("No HTTP response")
-    }*/
     
     
     
@@ -62,7 +49,8 @@ func sendRGRequest() {
     }
 }
 
-func post(params : String, url : String) {
+func post(params : String, url : String) -> NSObject {
+    var returnVar :NSObject = NSObject()
     var request = NSMutableURLRequest(URL: NSURL(string: url)!)
     var session = NSURLSession.sharedSession()
     request.HTTPMethod = "POST"
@@ -77,26 +65,23 @@ func post(params : String, url : String) {
     var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
         println("Response: \(response)")
         var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
-        println("Body: \(strData)")
+        //println("Body: \(strData)")
         var err: NSError?
-        var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
+        var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSObject
         
-        // Did the JSONObjectWithData constructor return an error? If so, log the error to the console
+        // JSONObjectWithData error
         if(err != nil) {
             println(err!.localizedDescription)
             let jsonStr = NSString(data: data, encoding: NSUTF8StringEncoding)
             println("Error could not parse JSON: '\(jsonStr)'")
         }
         else {
-            // The JSONObjectWithData constructor didn't return an error. But, we should still
-            // check and make sure that json has a value using optional binding.
+            // check and make sure that json has a value using optional binding
             if let parseJSON = json {
-                // Okay, the parsedJSON is here, let's get the value for 'success' out of it
-                var success = parseJSON["success"] as? Int
-                println("Succes: \(success)")
+                println("Successfully fetched data")
+                returnVar = json!
             }
             else {
-                // Woa, okay the json object was nil, something went worng. Maybe the server isn't running?
                 let jsonStr = NSString(data: data, encoding: NSUTF8StringEncoding)
                 println("Error could not parse JSON: \(jsonStr)")
             }
@@ -104,4 +89,6 @@ func post(params : String, url : String) {
     })
     
     task.resume()
+    
+    return returnVar
 }
