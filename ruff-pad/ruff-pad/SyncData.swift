@@ -10,11 +10,6 @@ import Foundation
 import Haneke
 
 func sendRGRequest() {
-    // create the request & response
-    /*var request = NSMutableURLRequest(URL: NSURL(string: "https://api.rescuegroups.org/http/json")!, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData, timeoutInterval: 5)
-    var response: NSURLResponse?
-    var error: NSError?*/
-    
     let jsonRequestString =
     "{\"apikey\" : \"QltdwQc9\"," +
         "\"objectType\" : \"animals\"," +
@@ -36,21 +31,10 @@ func sendRGRequest() {
             "}" +
         "}"
     
-    var json : NSObject = post(jsonRequestString, "https://api.rescuegroups.org/http/json")
-    
-    
-    
-    
-    let cache = Shared.JSONCache
-    let URL = NSURL(string: "https://api.github.com/users/haneke")!
-    
-    cache.fetch(URL: URL).onSuccess { JSON in
-        println(JSON.dictionary?["bio"])
-    }
+    post(jsonRequestString, "https://api.rescuegroups.org/http/json")
 }
 
-func post(params : String, url : String) -> NSObject {
-    var returnVar :NSObject = NSObject()
+func post(params : String, url : String) {
     var request = NSMutableURLRequest(URL: NSURL(string: url)!)
     var session = NSURLSession.sharedSession()
     request.HTTPMethod = "POST"
@@ -79,7 +63,7 @@ func post(params : String, url : String) -> NSObject {
             // check and make sure that json has a value using optional binding
             if let parseJSON = json {
                 println("Successfully fetched data")
-                returnVar = json!
+                parseResponse(json!)
             }
             else {
                 let jsonStr = NSString(data: data, encoding: NSUTF8StringEncoding)
@@ -89,6 +73,15 @@ func post(params : String, url : String) -> NSObject {
     })
     
     task.resume()
-    
-    return returnVar
+}
+
+func parseResponse(jsonObj: NSObject) {
+    let json = JSON(jsonObj)
+
+    println("parsing rsp")
+
+    let animalData = json["data"]
+    for (animalID: String, subJson: JSON) in animalData {
+        println("id: \(animalID)")
+    }
 }
