@@ -84,4 +84,25 @@ func parseResponse(jsonObj: NSObject) {
     for (animalID: String, subJson: JSON) in animalData {
         println("id: \(animalID)")
     }
+
+    let animalDataStr = animalData.rawString()
+
+    let cache = Shared.stringCache
+    
+    cache.set(value: animalDataStr!, key: "animalData")
+    
+    cache.fetch(key: "animalData").onSuccess { cacheData in
+        println("fetch: \(cacheData)")
+        
+        let nsJson = (cacheData as NSString).dataUsingEncoding(NSUTF8StringEncoding)
+        
+        let newJson = JSON(data: nsJson!)
+        
+        for (animalId: String, subJson: JSON) in animalData {
+            let animalName = subJson["animalName"].stringValue
+            println("name: \(animalName)")
+        }
+    }
+    
+    
 }
