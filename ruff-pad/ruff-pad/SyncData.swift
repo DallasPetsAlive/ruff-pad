@@ -20,7 +20,7 @@ func sendRGRequest() {
             "\"resultLimit\" : 500," +
             "\"resultSort\" : \"animalID\"," +
             "\"fields\" :[" +
-                "\"animalID\", \"animalOrgID\", \"animalName\", \"animalSpecies\", \"animalBreed\", \"animalThumbnailUrl\"]," +
+                "\"animalID\", \"animalOrgID\", \"animalName\", \"animalPictures\", \"animalSpecies\", \"animalBreed\", \"animalThumbnailUrl\"]," +
             "\"filters\" : [" +
                     "{" +
                         "\"fieldName\" : \"animalStatus\"," +
@@ -81,9 +81,6 @@ func parseResponse(jsonObj: NSObject) {
     println("parsing rsp")
 
     let animalData = json["data"]
-    for (animalID: String, subJson: JSON) in animalData {
-        println("id: \(animalID)")
-    }
 
     let animalDataStr = animalData.rawString()
 
@@ -91,18 +88,39 @@ func parseResponse(jsonObj: NSObject) {
     
     cache.set(value: animalDataStr!, key: "animalData")
     
+    cacheResponse()
+}
+
+func cacheResponse() {
+    let cache = Shared.stringCache
+    let imgCache = Shared.imageCache
+    
     cache.fetch(key: "animalData").onSuccess { cacheData in
-        println("fetch: \(cacheData)")
+        //println("fetch: \(cacheData)")
         
         let nsJson = (cacheData as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         
         let newJson = JSON(data: nsJson!)
         
-        for (animalId: String, subJson: JSON) in animalData {
+        for (animalId: String, subJson: JSON) in newJson {
             let animalName = subJson["animalName"].stringValue
-            println("name: \(animalName)")
+            //println("name: \(animalName)")
+            
+            let animalPictures = subJson["animalPictures"]
+            let count = 0
+            for (index: String, subJsonPicture: JSON) in animalPictures {
+                let count = count + 1
+                if (count <= 3) {
+                    let pictureURL = subJsonPicture["urlInsecureFullsize"].stringValue
+                    println("url: \(pictureURL)")
+                    //println("sub: \(subJsonPicture)")
+                
+                    let URL = NSURL(string: pictureURL)!
+                    imgCache.fetch(URL: URL).onSuccess { image in
+                        println("success")
+                    }
+                }
+            }
         }
     }
-    
-    
 }
